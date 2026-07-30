@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* רקע הדרגתי עדין ואלגנטי */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding: 60px 20px; /* ריווח גדול יותר מסביב */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px; /* פינות מעוגלות יותר */
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); /* צל עמוק ורך */
+    max-width: 700px;
+    margin: auto;
+    border-left: 8px solid #38ada9; /* פס צבעוני עבה ומרגיע בצד (ירוק-טורקיז) */
+    transition: transform 0.3s ease; /* אנימציה עדינה בריחוף */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* הרמה קלה כשעוברים עליו עם העכבר */
+}
+
+h1 {
+    color: #2c3a47; /* כותרת כהה ואלגנטית */
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase; /* אותיות גדולות לכותרת מרשימה */
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* הוספת קו תחתון מעוצב לכותרת */
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #38ada9;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+p {
+    color: #57606f; /* טקסט אפור-כחול נעים לקריאה */
+    font-size: 1.2em;
+    line-height: 1.8; /* רווח שורות נוח */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e056fd; /* צבע הדגשה סגול-ורוד פסטלי ועשיר לקישורים */
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+a:hover {
+    border-color: #e056fd; /* הקישור מודגש עם קו תחתון בריחוף */
+}
